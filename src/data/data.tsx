@@ -69,18 +69,17 @@ export type SectionId = typeof SectionId[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `I'm Tim Baker.`,
+  name: `I'm Talha Khalid.`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Victoria based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
-        at <strong className="text-stone-100">Instant Domains</strong> helping build a modern, mobile-first, domain
-        registrar and site builder.
+        I'm a Helsinki based <strong className="text-stone-100">Google and Azure Cloud Engineer</strong>, currently working
+        at <strong className="text-stone-100">Nordcloud- an IBM Company</strong> helping customers navigate their complex cloud environment.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me training in <strong className="text-stone-100">Muay Thai</strong>,
-        plucking my <strong className="text-stone-100">banjo</strong>, or exploring beautiful{' '}
-        <strong className="text-stone-100">Vancouver Island</strong>.
+        In my free time time, you can catch me running <strong className="text-stone-100">outside</strong>,
+        socialzing with  <strong className="text-stone-100">friends</strong>, or exploring beautiful{' '}
+        <strong className="text-stone-100">new unique places</strong>.
       </p>
     </>
   ),
@@ -129,12 +128,21 @@ export const skills: SkillGroup[] = [
         level: 10,
       },
       {
-        name: 'French',
-        level: 4,
+        name: 'Urdu',
+        level: 10,
       },
       {
-        name: 'Spanish',
-        level: 3,
+        name: 'Finnish',
+        level: 6,
+      },
+      {
+        name: 'German',
+        level: 2,
+      },
+
+      {
+        name: 'Punjabi',
+        level: 8,
       },
     ],
   },
