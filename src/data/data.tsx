@@ -3,7 +3,7 @@ import {
   ArrowDownTrayIcon,
   BuildingOffice2Icon,
   CalendarIcon,
-  FlagIcon,
+  //FlagIcon,
   MapIcon,
   SparklesIcon,
 } from '@heroicons/react/24/outline';
@@ -44,8 +44,8 @@ import {
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'React Resume Template',
-  description: "Example site built with Tim Baker's react resume template",
+  title: 'React Resume',
+  description: "",
 };
 
 /**
@@ -69,17 +69,17 @@ export type SectionId = typeof SectionId[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `I'm Talha Khalid.`,
+  name: `I'm Talha Khalid`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
         I'm a Helsinki based <strong className="text-stone-100">Google and Azure Cloud Engineer</strong>, currently working
-        at <strong className="text-stone-100">Nordcloud- an IBM Company</strong> helping customers navigate their complex cloud environment.
+        at <strong className="text-stone-100">Nordcloud - an IBM Company</strong> helping customers navigate their complex cloud environment.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me running <strong className="text-stone-100">outside</strong>,
-        socialzing with  <strong className="text-stone-100">friends</strong>, or exploring beautiful{' '}
-        <strong className="text-stone-100">new unique places</strong>.
+        In my free time time, you can catch me jogging in <strong className="text-stone-100">Nature</strong>,
+        socialzing with  <strong className="text-stone-100">Friends</strong>, or hiking in {' '}
+        <strong className="text-stone-100">Norwegian Fjords</strong>.
       </p>
     </>
   ),
@@ -103,16 +103,15 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `Use this bio section as your way of describing yourself and saying what you do, what technologies you like
-  to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
-  in.`,
+  description: `I am a highly accomplished and certified IT professional with an extensive background in automation, software development, and cloud computing.
+  I hold a Master's degree in Automation and Electrical Engineering, and am Professionally certified by Google and Microsoft in Cloud Technology.`,
   aboutItems: [
-    {label: 'Location', text: 'Victoria, BC', Icon: MapIcon},
-    {label: 'Age', text: '29', Icon: CalendarIcon},
-    {label: 'Nationality', text: 'Canadian / Irish', Icon: FlagIcon},
-    {label: 'Interests', text: 'Motorcycles, Muay Thai, Banjos', Icon: SparklesIcon},
-    {label: 'Study', text: 'University of Victoria', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Instant Domains, inc.', Icon: BuildingOffice2Icon},
+    {label: 'Location', text: 'Helsinki, FI', Icon: MapIcon},
+    {label: 'Age', text: '28', Icon: CalendarIcon},
+    //{label: 'Nationality', text: 'Canadian / Irish', Icon: FlagIcon},
+    {label: 'Interests', text: 'Hiking, Jogging, Socializing', Icon: SparklesIcon},
+    {label: 'Study', text: 'Aalto University', Icon: AcademicCapIcon},
+    {label: 'Employment', text: 'Nordcloud - an IBM Company.', Icon: BuildingOffice2Icon},
   ],
 };
 
@@ -120,6 +119,39 @@ export const aboutData: About = {
  * Skills section
  */
 export const skills: SkillGroup[] = [
+  {
+    name: 'Certifications',
+    skills: [
+      {
+        name: 'Google Cloud - Professional Cloud Architect',
+        level: 10,
+      },
+      {
+        name: 'Google Cloud - Associate Cloud Engineer',
+        level: 10,
+      },
+      {
+        name: 'Google Cloud - Cloud Digital Leader',
+        level: 10,
+      },
+      {
+        name: 'Microsoft Azure Fundamentals',
+        level: 10,
+      },
+      {
+        name: 'AWS Cloud Practitoner',
+        level: 10,
+      },
+      {
+        name: 'AWS - Migration Ambassador Foundation',
+        level: 10,
+      },
+      {
+        name: 'Terraform Associate 002',
+        level : 10,
+      }
+    ],
+  },
   {
     name: 'Spoken languages',
     skills: [
@@ -139,64 +171,38 @@ export const skills: SkillGroup[] = [
         name: 'German',
         level: 2,
       },
+    ],
+  },
+  {
+    name: 'Tech Skills',
+    skills: [
+      {
+        name: 'Cloud Architecture, Deployment and Management',
+        level: 10
+      },
+      {
+        name: 'Public Cloud Migrations',
+        level: 10
+      },
+      {
+        name: 'Kubernetes',
+        level: 10
+      },
+      {
+        name: 'Scripting via PowerShell, Python, Bash',
+        level: 10
+      },
+      {
+        name: 'Web scraping via Selenium & BeautifulSoup',
+        level: 10
+      },
+      {
+        name: 'Web development via React, Node, JavaScript',
+        level: 10
+      },
+    ]
+  }
 
-      {
-        name: 'Punjabi',
-        level: 8,
-      },
-    ],
-  },
-  {
-    name: 'Frontend development',
-    skills: [
-      {
-        name: 'React',
-        level: 9,
-      },
-      {
-        name: 'Typescript',
-        level: 7,
-      },
-      {
-        name: 'GraphQL',
-        level: 6,
-      },
-    ],
-  },
-  {
-    name: 'Backend development',
-    skills: [
-      {
-        name: 'Node.js',
-        level: 8,
-      },
-      {
-        name: 'Rust',
-        level: 5,
-      },
-      {
-        name: 'Golang',
-        level: 4,
-      },
-    ],
-  },
-  {
-    name: 'Mobile development',
-    skills: [
-      {
-        name: 'React Native',
-        level: 9,
-      },
-      {
-        name: 'Flutter',
-        level: 4,
-      },
-      {
-        name: 'Swift',
-        level: 3,
-      },
-    ],
-  },
 ];
 
 /**
@@ -276,39 +282,55 @@ export const portfolioItems: PortfolioItem[] = [
  */
 export const education: TimelineItem[] = [
   {
-    date: 'April 2007',
-    location: 'Clown college',
-    title: 'Masters in Beer tasting',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    date: '2020 - 2023',
+    location: 'Aalto University, Finland',
+    title: 'Masters in Automation Engineering',
+    content: <p>Major: Control, Robotics and Autonomous Systems</p>,
   },
   {
-    date: 'March 2003',
-    location: 'School of Business',
-    title: 'What did you study 101',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    date: '2014 - 2019',
+    location: 'Häme University of Applied Sciences, Finland',
+    title: 'Bachelors in Automation Engineering',
+    content: <p></p>,
   },
-];
+  {
+    date: '2017 - 2018',
+    location: 'VIA Univeristy College, Denmark',
+    title: 'Bachelors in Mechanical Engineering',
+    content: <p>This was a double degree program organized by Häme University</p>,
+  },
+]
 
 export const experience: TimelineItem[] = [
   {
-    date: 'March 2010 - Present',
-    location: 'Awesome Development Company',
-    title: 'Senior UX Engineer',
+    date: 'December 2021 - Present',
+    location: 'Nordcloud - an IBM Company',
+    title: 'Cloud Engineer',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+        My work as a Cloud Engineer involves arhitecting new solutions and managing customer's complex cloud environment. I deal with both Google Cloud and Microsoft
+        Azure, and work with Firewall management, VM creation, Networking, Landing Zones, Defender for Cloud, Automation Accounts and KQL queries to name a few. 
       </p>
     ),
   },
   {
-    date: 'March 2007 - February 2010',
-    location: 'Garage Startup Studio',
-    title: 'Junior bug fixer',
+    date: 'July 2021 - October 2021',
+    location: 'MigraineBan Oy',
+    title: 'Mechanical Design Engineer',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+        This was a contract based role, where I was responsible for designing a prototype of a Migraine Care device. This was a successful project, and I was able
+        to hand over 4 working prototypes at the end of the project. 
+      </p>
+    ),
+  },
+  {
+    date: 'October 2021 - December 2021',
+    location: 'Aalto University',
+    title: 'Teaching Assistant',
+    content: (
+      <p>
+       Teaching Assistant for the course of Software Engineering
       </p>
     ),
   },
@@ -356,15 +378,15 @@ export const contact: ContactSection = {
       text: 'Victoria BC, Canada',
       href: 'https://www.google.ca/maps/place/Victoria,+BC/@48.4262362,-123.376775,14z',
     },
-    {
+/*     {
       type: ContactType.Instagram,
       text: '@tbakerx',
       href: 'https://www.instagram.com/tbakerx/',
-    },
+    }, */
     {
       type: ContactType.Github,
       text: 'tbakerx',
-      href: 'https://github.com/tbakerx',
+      href: 'https://github.com/taaalha',
     },
   ],
 };
@@ -373,9 +395,9 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/tbakerx'},
-  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
-  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/'},
-  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/tbakerx/'},
-  {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
+  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/taaalha'},
+  //{label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
+  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/talha-khalid1/'},
+  //{label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/tbakerx/'},
+  //{label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
 ];
