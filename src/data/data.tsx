@@ -27,6 +27,7 @@ import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
 import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
 import profilepic from '../images/profilepic.jpg';
 import testimonialImage from '../images/testimonial.webp';
+
 import {
   About,
   ContactSection,
@@ -84,16 +85,17 @@ export const heroData: Hero = {
     </>
   ),
   actions: [
-    {
-      href: '/assets/resume.pdf',
-      text: 'Resume',
-      primary: true,
-      Icon: ArrowDownTrayIcon,
-    },
+    // {
+    //   href: '/assets/resume.pdf',
+    //   text: 'Resume',
+    //   primary: true,
+    //   Icon: ArrowDownTrayIcon,
+    // },
     {
       href: `#${SectionId.Contact}`,
-      text: 'Contact',
+      text: 'Contact me',
       primary: false,
+      Icon: ArrowDownTrayIcon
     },
   ],
 };
@@ -210,9 +212,9 @@ export const skills: SkillGroup[] = [
  */
 export const portfolioItems: PortfolioItem[] = [
   {
-    title: 'Project title 1',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
+    title: '',
+    description: '',
+    url: '',
     image: porfolioImage1,
   },
   {
@@ -343,19 +345,24 @@ export const testimonial: TestimonialSection = {
   imageSrc: testimonialImage,
   testimonials: [
     {
-      name: 'John Doe',
-      text: 'Use this as an opportunity to promote what it is like to work with you. High value testimonials include ones from current or past co-workers, managers, or from happy clients.',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/169.jpg',
+      name: 'Customer',
+      text: 'Very professional and quick response time in handling the setup and configuration of Google Cloud DNS API. The process was thoroughly documented and went over and beyond by offering security best practices.',
+      image: '',
     },
     {
-      name: 'Jane Doe',
-      text: 'Here you should write some nice things that someone has said about you. Encourage them to be specific and include important details (notes about a project you were on together, impressive quality produced, etc).',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/14.jpg',
+      name: 'Customer',
+      text: 'Extremely helpful with infrastructure issue.  Very knowledgeable and efficient.  Would not hesitate to hire again for network infrastructure issues in the future',
+      image: '',
     },
     {
-      name: 'Someone else',
-      text: 'Add several of these, and keep them as fresh as possible, but be sure to focus on quality testimonials with strong highlights of your skills/work ethic.',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/69.jpg',
+      name: 'Customer',
+      text: 'Excellent work delivered in configuring Azure Defender for Cloud, and creating interactive dashboards ',
+      image: '',
+    },
+    {
+      name: 'Customer',
+      text: 'Very knowledgeable in Kubernetes realted issues. Helped us configure auto scaling GKE Clusters with seperate node pools',
+      image: '',
     },
   ],
 };
@@ -370,13 +377,13 @@ export const contact: ContactSection = {
   items: [
     {
       type: ContactType.Email,
-      text: 'reachout@timbaker.me',
-      href: 'mailto:reachout@timbaker.me',
+      text: 'talhak.ytk@gmail.com',
+      href: 'mailto:talhak.ytk@gmail.com',
     },
     {
       type: ContactType.Location,
-      text: 'Victoria BC, Canada',
-      href: 'https://www.google.ca/maps/place/Victoria,+BC/@48.4262362,-123.376775,14z',
+      text: 'Helsinki, Finland',
+      href: 'https://www.google.com/maps/place/Helsinki/@60.1729021,24.9235216,13.21',
     },
 /*     {
       type: ContactType.Instagram,
@@ -385,7 +392,7 @@ export const contact: ContactSection = {
     }, */
     {
       type: ContactType.Github,
-      text: 'tbakerx',
+      text: 'taaalha',
       href: 'https://github.com/taaalha',
     },
   ],
