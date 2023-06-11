@@ -56,7 +56,7 @@ export const SectionId = {
   Hero: 'hero',
   About: 'about',
   Contact: 'contact',
-  Portfolio: 'portfolio',
+  Portfolio: 'Life snippets',
   Resume: 'resume',
   Skills: 'skills',
   Stats: 'stats',
@@ -372,8 +372,8 @@ export const testimonial: TestimonialSection = {
  */
 
 export const contact: ContactSection = {
-  headerText: 'Get in touch.',
-  description: 'Here is a good spot for a message to your readers to let them know how best to reach out to you.',
+  headerText: 'Get in touch',
+  description: 'You can reach out to me via the following email',
   items: [
     {
       type: ContactType.Email,
