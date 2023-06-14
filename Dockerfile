@@ -4,7 +4,6 @@
 ARG NODE_VERSION=19.9.0
 FROM node:${NODE_VERSION}-slim as base
 
-LABEL fly_launch_runtime="Next.js"
 
 # Next.js app lives here
 WORKDIR /app
