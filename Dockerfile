@@ -8,37 +8,20 @@ FROM node:${NODE_VERSION}-slim as base
 # Next.js app lives here
 WORKDIR /app
 
-# Set production environment
-ENV NODE_ENV=production
+# Copy package.json and yarn.lock to the working directory
+COPY package.json yarn.lock ./
 
+# Install dependencies
+RUN yarn install --frozen-lockfile --production
 
-# Throw-away build stage to reduce size of final image
-FROM base as build
+# Copy the rest of the project files to the working directory
+COPY . .
 
-# Install packages needed to build node modules
-RUN apt-get update -qq && \
-    apt-get install -y python-is-python3 pkg-config build-essential 
+# Build the project
+RUN yarn build
 
-# Install node modules
-COPY --link package.json yarn.lock ./
-RUN yarn install --production=false
-
-# Copy application code
-COPY --link . .
-
-# Build application
-RUN yarn run build
-
-# Remove development dependencies
-RUN yarn install --production=true
-
-
-# Final stage for app image
-FROM base
-
-# Copy built application
-COPY --from=build /app /app
-
-# Start the server by default, this can be overwritten at runtime
+# Expose the port on which your application will run (if applicable)
 EXPOSE 3000
-CMD [ "yarn", "run", "start" ]
+
+# Start the application
+CMD ["yarn", "run", "start"]
