@@ -17,6 +17,7 @@ RUN yarn install --production
 # Copy the rest of the project files to the working directory
 COPY . .
 
+RUN npm install typescript@latest -g
 # Build the project
 RUN yarn build
 
