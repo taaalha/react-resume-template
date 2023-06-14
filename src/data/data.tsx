@@ -27,7 +27,6 @@ import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
 import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
 import profilepic from '../images/profilepic.jpg';
 import testimonialImage from '../images/testimonial.webp';
-
 import {
   About,
   ContactSection,
@@ -46,7 +45,7 @@ import {
  */
 export const homePageMeta: HomepageMeta = {
   title: 'React Resume',
-  description: "",
+  description: '',
 };
 
 /**
@@ -63,7 +62,7 @@ export const SectionId = {
   Testimonials: 'testimonials',
 } as const;
 
-export type SectionId = typeof SectionId[keyof typeof SectionId];
+export type SectionId = (typeof SectionId)[keyof typeof SectionId];
 
 /**
  * Hero section
@@ -74,12 +73,13 @@ export const heroData: Hero = {
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Helsinki based <strong className="text-stone-100">Google and Azure Cloud Engineer</strong>, currently working
-        at <strong className="text-stone-100">Nordcloud - an IBM Company</strong> helping customers navigate their complex cloud environment.
+        I'm a Helsinki based <strong className="text-stone-100">Google and Azure Cloud Engineer</strong>, currently
+        working at <strong className="text-stone-100">Nordcloud - an IBM Company</strong> helping customers navigate
+        their complex cloud environment.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me jogging in <strong className="text-stone-100">Nature</strong>,
-        socialzing with  <strong className="text-stone-100">Friends</strong>, or hiking in {' '}
+        In my free time time, you can catch me jogging in <strong className="text-stone-100">Nature</strong>, socialzing
+        with <strong className="text-stone-100">Friends</strong>, or hiking in{' '}
         <strong className="text-stone-100">Norwegian Fjords</strong>.
       </p>
     </>
@@ -95,7 +95,7 @@ export const heroData: Hero = {
       href: `#${SectionId.Contact}`,
       text: 'Contact me',
       primary: false,
-      Icon: ArrowDownTrayIcon
+      Icon: ArrowDownTrayIcon,
     },
   ],
 };
@@ -150,8 +150,8 @@ export const skills: SkillGroup[] = [
       },
       {
         name: 'Terraform Associate 002',
-        level : 10,
-      }
+        level: 10,
+      },
     ],
   },
   {
@@ -180,31 +180,30 @@ export const skills: SkillGroup[] = [
     skills: [
       {
         name: 'Cloud Architecture, Deployment and Management',
-        level: 10
+        level: 10,
       },
       {
         name: 'Public Cloud Migrations',
-        level: 10
+        level: 10,
       },
       {
         name: 'Kubernetes',
-        level: 10
+        level: 10,
       },
       {
         name: 'Scripting via PowerShell, Python, Bash',
-        level: 10
+        level: 10,
       },
       {
         name: 'Web scraping via Selenium & BeautifulSoup',
-        level: 10
+        level: 10,
       },
       {
         name: 'Web development via React, Node, JavaScript',
-        level: 10
+        level: 10,
       },
-    ]
-  }
-
+    ],
+  },
 ];
 
 /**
@@ -301,7 +300,7 @@ export const education: TimelineItem[] = [
     title: 'Bachelors in Mechanical Engineering',
     content: <p>This was a double degree program organized by Häme University</p>,
   },
-]
+];
 
 export const experience: TimelineItem[] = [
   {
@@ -310,8 +309,9 @@ export const experience: TimelineItem[] = [
     title: 'Cloud Engineer',
     content: (
       <p>
-        My work as a Cloud Engineer involves arhitecting new solutions and managing customer's complex cloud environment. I deal with both Google Cloud and Microsoft
-        Azure, and work with Firewall management, VM creation, Networking, Landing Zones, Defender for Cloud, Automation Accounts and KQL queries to name a few. 
+        My work as a Cloud Engineer involves arhitecting new solutions and managing customer's complex cloud
+        environment. I deal with both Google Cloud and Microsoft Azure, and work with Firewall management, VM creation,
+        Networking, Landing Zones, Defender for Cloud, Automation Accounts and KQL queries to name a few.
       </p>
     ),
   },
@@ -321,8 +321,8 @@ export const experience: TimelineItem[] = [
     title: 'Mechanical Design Engineer',
     content: (
       <p>
-        This was a contract based role, where I was responsible for designing a prototype of a Migraine Care device. This was a successful project, and I was able
-        to hand over 4 working prototypes at the end of the project. 
+        This was a contract based role, where I was responsible for designing a prototype of a Migraine Care device.
+        This was a successful project, and I was able to hand over 4 working prototypes at the end of the project.
       </p>
     ),
   },
@@ -330,11 +330,7 @@ export const experience: TimelineItem[] = [
     date: 'October 2021 - December 2021',
     location: 'Aalto University',
     title: 'Teaching Assistant',
-    content: (
-      <p>
-       Teaching Assistant for the course of Software Engineering
-      </p>
-    ),
+    content: <p>Teaching Assistant for the course of Software Engineering</p>,
   },
 ];
 
@@ -385,7 +381,7 @@ export const contact: ContactSection = {
       text: 'Helsinki, Finland',
       href: 'https://www.google.com/maps/place/Helsinki/@60.1729021,24.9235216,13.21',
     },
-/*     {
+    /*     {
       type: ContactType.Instagram,
       text: '@tbakerx',
       href: 'https://www.instagram.com/tbakerx/',
