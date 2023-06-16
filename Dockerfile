@@ -1,8 +1,4 @@
-# syntax = docker/dockerfile:1
-
-# Adjust NODE_VERSION as desired
-ARG NODE_VERSION=19.9.0
-FROM node:${NODE_VERSION}-slim as base
+FROM node:14-alpine as base
 
 # Next.js app lives here
 WORKDIR /app
@@ -16,11 +12,8 @@ RUN yarn install --production
 # Copy the rest of the project files to the working directory
 COPY . .
 
-# Install TypeScript globally using Yarn
-RUN yarn global add typescript
-
 # Build the project
-RUN yarn build
+RUN yarn run build
 
 # Expose the port on which your application will run (if applicable)
 EXPOSE 3000
