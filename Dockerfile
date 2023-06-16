@@ -4,7 +4,6 @@
 ARG NODE_VERSION=19.9.0
 FROM node:${NODE_VERSION}-slim as base
 
-
 # Next.js app lives here
 WORKDIR /app
 
@@ -17,7 +16,9 @@ RUN yarn install --production
 # Copy the rest of the project files to the working directory
 COPY . .
 
-RUN npm install typescript@latest -g
+# Install TypeScript globally using Yarn
+RUN yarn global add typescript
+
 # Build the project
 RUN yarn build
 
