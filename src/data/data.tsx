@@ -44,7 +44,7 @@ import {
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'React Resume',
+  title: 'Talha Khalid',
   description: '',
 };
 
@@ -78,9 +78,9 @@ export const heroData: Hero = {
         their complex cloud environment.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me jogging in <strong className="text-stone-100">Nature</strong>, socialzing
-        with <strong className="text-stone-100">Friends</strong>, or hiking in{' '}
-        <strong className="text-stone-100">Norwegian Fjords</strong>.
+        In my free time time, you can catch me jogging in <strong className="text-stone-100">Finnish Nature</strong>, socialzing
+        with <strong className="text-stone-100">Friends</strong>, or hiking in the{' '}
+        <strong className="text-stone-100">Mountains</strong>.
       </p>
     </>
   ),
@@ -311,7 +311,7 @@ export const experience: TimelineItem[] = [
       <p>
         My work as a Cloud Engineer involves arhitecting new solutions and managing customer's complex cloud
         environment. I deal with both Google Cloud and Microsoft Azure, and work with Firewall management, VM creation,
-        Networking, Landing Zones, Defender for Cloud, Automation Accounts and KQL queries to name a few.
+        Networking, Scripting, Landing Zones, Defender for Cloud, Automation Accounts and KQL queries to name a few.
       </p>
     ),
   },
@@ -356,8 +356,8 @@ export const testimonial: TestimonialSection = {
       image: '',
     },
     {
-      name: 'Manager',
-      text: 'Excellent job in configuring OT/ICC deployments. Really happy with the work',
+      name: 'Customer',
+      text: 'Really good at scripting. Helped us reduced our cloud costs by 90,000 eur/month',
       image: '',
     },
     {
