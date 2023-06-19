@@ -350,11 +350,11 @@ export const testimonial: TestimonialSection = {
       text: 'Shining star of our team. Absolute fantastic contributor to all of the streams',
       image: '',
     },
-    {
+/*     {
       name: 'Customer',
       text: 'Extremely helpful with infrastructure issue.  Very knowledgeable and efficient.  Would not hesitate to hire again for network infrastructure issues in the future',
       image: '',
-    },
+    }, */
     {
       name: 'Customer',
       text: 'Really good at scripting. Helped us reduced our cloud costs by 90,000 eur/month',
@@ -365,11 +365,11 @@ export const testimonial: TestimonialSection = {
       text: 'Excellent work delivered in configuring Azure Defender for Cloud, and creating interactive dashboards ',
       image: '',
     },
-    {
+/*     {
       name: 'Customer',
       text: 'Very knowledgeable in Kubernetes realted issues. Helped us configure auto scaling GKE Clusters with seperate node pools',
       image: '',
-    },
+    }, */
   ],
 };
 
