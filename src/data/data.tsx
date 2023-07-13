@@ -22,9 +22,10 @@ import porfolioImage5 from '../images/portfolio/portfolio-5.jpg';
 import porfolioImage6 from '../images/portfolio/portfolio-6.jpg';
 import porfolioImage7 from '../images/portfolio/portfolio-7.jpg';
 import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
-import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
+//import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
 import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
 import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
+import porfolioImage12 from '../images/portfolio/portfolio-12.jpg';
 import profilepic from '../images/profilepic.jpg';
 import testimonialImage from '../images/testimonial.webp';
 import {
@@ -78,7 +79,7 @@ export const heroData: Hero = {
         their complex cloud environment.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me jogging in <strong className="text-stone-100">Finnish Nature</strong>, socialzing
+        In my free time, you can catch me jogging in <strong className="text-stone-100">Finnish Nature</strong>, socialzing
         with <strong className="text-stone-100">Friends</strong>, or hiking in the{' '}
         <strong className="text-stone-100">Mountains</strong>.
       </p>
@@ -259,10 +260,10 @@ export const portfolioItems: PortfolioItem[] = [
     image: porfolioImage8,
   },
   {
-    title: '',
+    title: 'Remote Work',
     description: '',
     url: '',
-    image: porfolioImage9,
+    image: porfolioImage12,
   },
   {
     title: 'European Parliament',
